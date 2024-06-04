@@ -15,6 +15,14 @@ body {
     overflow-y: hidden;           /* ⚠️ CONFIG TEMPORÁRIA */
 }
 
+/* ⚠️ CONFIG TEMPORÁRIA */
+@media (max-width: 1719px) {
+    body {
+        display: none;
+    }
+}
+/* ⚠️ CONFIG TEMPORÁRIA */
+
 body::-webkit-scrollbar {
     width: 23px;
     background-color: black;
