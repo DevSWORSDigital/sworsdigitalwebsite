@@ -1,0 +1,889 @@
+/* Definindo a fonte personalizada */
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Manrope - Extra Bold */
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Manrope - Light */
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Manrope - Medium */
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Manrope - Regular */
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Manrope - Semi Bold */
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Manrope - Thin */
+@font-face {
+    font-family: 'Manrope';
+    src: url('assets/fonts/manrope-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Neurial Grotesk - Bold Italic */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Neurial Grotesk - Extra Bold */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-Extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Neurial Grotesk - Italic */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Neurial Grotesk - Light */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Neurial Grotesk - Light Italic */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Neurial Grotesk - Medium */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Neurial Grotesk - Medium Italic */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Neurial Grotesk - Regular */
+@font-face {
+    font-family: 'NeurialGrotesk';
+    src: url('assets/fonts/NeurialGrotesk-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Definindo a fonte personalizada */
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+    overflow-x: hidden;
+    overflow-y:
+        /* hidden */
+        --;
+    /* ⚠️ CONFIG TEMPORÁRIA */
+}
+
+body::-webkit-scrollbar {
+    width: 23px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 0px;
+    background-color: #1F9A99;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+/* ⚠️ CONFIG TEMPORÁRIA */
+
+.alert-temp {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-temp-square {
+    background-color: rgba(20, 15, 0, 0.980);
+    border: 2px solid rgb(166, 122, 0);
+    border-radius: 10px;
+    width: 90%;
+    height: 30%;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#alert-icon {
+    width: 60px;
+    
+}
+
+.text1-manutencao {
+    color: white;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 22.5px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    letter-spacing: calc(0.03 * 22.5px); /* 3% de 22.5px */
+}
+
+.text2-manutencao {
+    color: white;
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: calc(0.03 * 16px); /* 3% de 16px */
+}
+
+/* ⚠️ CONFIG TEMPORÁRIA */
+
+
+
+/* Estilos para dispositivos de 0px a 480px */
+@media only screen and (max-width: 480px) {
+
+    .material-symbols-rounded {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 24;
+        padding-right: 20px;
+    }
+
+    body {
+        /* ⚠️ CONFIG TEMPORÁRIA */
+        overflow: hidden /* scroll */;
+    }
+
+    .home-firstPartial-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .contentElementsNav {
+        /* background-color: orange; */
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+        margin-right: 10px;
+    }
+
+    .image-backgound-main {
+        position: absolute;
+        width: 1200px;
+        height: 100%;
+        opacity: .10;
+        background-size: cover;
+        right: -160px;
+        /* centraliza a imagem */
+        background-repeat: no-repeat;
+        /* evita repetir a imagem */
+        transform: scale(1.6);
+        /* aumenta o tamanho da imagem em 20% */
+    }
+
+    header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        backdrop-filter: blur(5px);
+        /* Reduzindo o valor do blur */
+        background-color: #191919;
+        z-index: 1000;
+        /* Ajuste conforme necessário para garantir que o menu fique acima de outros elementos */
+        transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
+        /* Adicione uma transição suave para a mudança de cor, se desejar */
+    }
+
+    .logo {
+        display: flex;
+        text-align: center;
+        position: absolute;
+        left: 0 /* 50% */;
+        /* transform: translateX(-50%); */
+        margin-left: 20px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        width: 40px;
+    }
+
+    #container-closeMenu {
+        display: flex;
+        justify-content: end;
+        align-self: flex-end;
+        padding: 20px;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+
+    #close-menu {
+        display: flex;
+        justify-content: end;
+        width: 20px;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #f3f4f8
+            /* rgb(241, 241, 241) */
+        ;
+        flex-direction: column;
+        transform: translateX(+100%);
+        transition: transform 0.3s ease-in;
+        z-index: 9999999999999999;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        font-family: 'Manrope';
+        font-weight: 500;
+        font-size: 16px;
+        color: #199d9b;
+        padding-left: 50px;
+        border-top: 1px solid rgba(255, 255, 255, 0.502)
+            /* rgba(0, 0, 0, 0.201) */
+        ;
+        margin-left: 20px;
+        margin-right: 20px;
+        letter-spacing: calc(0.03 * 16px);
+        /* 3% de 16px */
+    }
+
+    .nav-list>a:nth-child(2) {
+        border-top: none;
+        margin-top: 20px;
+    }
+
+    .links:nth-child(2),
+    .links:nth-child(3),
+    .links:nth-child(4),
+    .links:nth-child(5),
+    .links:nth-child(6) {
+        background-color: #106362;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    nav>a,
+    .social-icons>a {
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .nav-list.active {
+        transform: translateX(0px);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .sticky-header.sticky {
+        height: 90px;
+        /* Altura do header ao rolar a página */
+        transition: height 0.5s ease-in-out;
+    }
+
+    .sticky {
+        background-color: black;
+        /* Adicione a cor de fundo desejada quando o menu estiver fixo */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        /* Adicione sombra se desejar */
+    }
+
+    .logo-img {
+        max-width: 150px;
+        /* Tamanho inicial da largura da imagem do logo */
+        max-height: 150px;
+    }
+
+    /* nav a {
+        font-family: 'Manrope';
+        font-weight: 400;
+        margin: 0 40px;
+        list-style: none;
+        text-decoration: none;
+        color: #F7F7F7;
+        font-size: 16px;
+        letter-spacing: .5px;
+        opacity: 1;
+        transition: 200ms ease;
+    } */
+
+    /* .logo>img {
+        width: 88px;
+        height: 88px;
+    } */
+
+    .socials {
+        display: flex;
+    }
+
+    .socials>a>img {
+        display: flex;
+        width: 20px;
+        height: 20px;
+    }
+
+    #instagram,
+    #facebook {
+        transition: content 200ms ease;
+    }
+
+    #instagram:hover {
+        content: url(./assets/icons/instagram-icon-color.png);
+    }
+
+    #facebook:hover {
+        content: url(./assets/icons/facebook-icon-color.png)
+    }
+
+    .socials>a {
+        display: flex;
+        margin: 0 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* ================== */
+    /*    Texto do main   */
+    /* ================== */
+
+    main {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    main h1 {
+        font-family: 'NeurialGrotesk';
+        font-weight: 700;
+        /* Neurial Grotesk Bold */
+        font-size: 34px;
+        color: #1F9A99;
+        margin: 0;
+        padding: 0;
+        letter-spacing: calc(0.03 * 34px);
+        /* 3% de 34px */
+    }
+
+    main div {
+        width: 100%;
+        height: 15px;
+    }
+
+    main h2 {
+        font-family: 'Manrope';
+        font-weight: 400;
+        color: #fff;
+        font-size: 22.5px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: calc(0.03 * 22.5px);
+        /* 3% de 22.5px */
+    }
+
+
+    /* ========================== */
+    /* Animação de Scroll (ícone) */
+    /* ========================== */
+
+    .demo a {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        z-index: -1;
+        display: inline-block;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: #1f9a9a00;
+        font: normal 400 15px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        pointer-events: none;
+    }
+
+    #section10 a {
+        padding-top: 65px;
+    }
+
+    #section10 a span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 30px;
+        height: 50px;
+        margin-left: -15px;
+        border: 2px solid #1F9A99;
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+
+    #section10 a span::before {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+        background-color: #1F9A99;
+        border-radius: 100%;
+        -webkit-animation: sdb10-inverted 2s infinite;
+        /* Usando a animação invertida */
+        animation: sdb10-inverted 2s infinite;
+        /* Usando a animação invertida */
+        box-sizing: border-box;
+    }
+
+    @-webkit-keyframes sdb10-inverted {
+        0% {
+            -webkit-transform: translate(0, 0);
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        60% {
+            -webkit-transform: translate(0, -20px);
+            /* Movimento invertido */
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes sdb10-inverted {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        60% {
+            transform: translate(0, -20px);
+            /* Movimento invertido */
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    #sobre-nos {
+        height: 1600px;
+        color: #1a1a1a;
+        background-color: #f3f4f8;
+        padding: 20px
+    }
+
+    #sobre-nos>h2 {
+        color: #0b4645;
+        font-family: 'NeurialGrotesk';
+        font-weight: 700;
+        font-size: 34px;
+        margin-top: 20px;
+        width: 50%;
+        letter-spacing: calc(0.03 * 34px);
+        /* 3% de 34px */
+    }
+
+    #sobre-nos>p {
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    #portfolio {
+        height: 1600px;
+        color: beige;
+    }
+
+}
+
+/* ============================================================================================ */
+
+/* Estilos para dispositivos de 481px a 768px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        display: none;
+    }
+}
+
+/* ============================================================================================ */
+
+/* Estilos para dispositivos de 769px a 1279px */
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+    body {
+        display: none;
+    }
+}
+
+/* ============================================================================================ */
+
+/* Estilos para dispositivos de 1280px ou mais */
+@media only screen and (min-width: 1280px) {
+
+    body {
+        display: none;
+    }
+
+    .home-firstPartial-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .contentElementsNav {
+        display: flex;
+        width: 1600px;
+        max-width: 1600px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .image-backgound-main {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .15;
+        background-size: cover;
+        /* garante que a imagem cubra todo o elemento */
+        background-position: center;
+        /* centraliza a imagem */
+        background-repeat: no-repeat;
+        /* evita repetir a imagem */
+        transform: scale(1.6);
+        /* aumenta o tamanho da imagem em 20% */
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        backdrop-filter: blur(5px);
+        /* Reduzindo o valor do blur */
+        background-color: rgba(255, 255, 255, 0.00001);
+    }
+
+    nav a {
+        pointer-events: none;
+        /* ⚠️ CONFIG TEMPORÁRIA */
+        margin: 0 40px;
+        list-style: none;
+        text-decoration: none;
+        color: #F7F7F7;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        opacity: 1;
+        transition: 200ms ease;
+    }
+
+    nav a.active {
+        color: #1F9A99;
+    }
+
+    nav a:hover {
+        color: #1F9A99;
+    }
+
+    .logo>img {
+        width: 88px;
+        height: 88px;
+    }
+
+    .socials {
+        display: flex;
+    }
+
+    .socials>a>img {
+        display: flex;
+        width: 20px;
+        height: 20px;
+    }
+
+    #instagram,
+    #facebook {
+        transition: content 200ms ease;
+    }
+
+    #instagram:hover {
+        content: url(./assets/icons/instagram-icon-color.png);
+    }
+
+    #facebook:hover {
+        content: url(./assets/icons/facebook-icon-color.png)
+    }
+
+    .socials>a {
+        display: flex;
+        margin: 0 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #sobre-nos {
+        height: 1600px;
+        color: beige;
+    }
+
+    #portfolio {
+        height: 1600px;
+        color: beige;
+    }
+
+    /* ================== */
+    /*    Texto do main   */
+    /* ================== */
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 68px;
+        color: #1F9A99;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 1px;
+    }
+
+    main div {
+        width: 100%;
+        height: 25px;
+    }
+
+    main h2 {
+        font-size: 26px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 1px;
+    }
+
+
+    /* ================== */
+    /* Animação de Scroll */
+    /* ================== */
+
+    .demo a {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+        display: inline-block;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: #1F9A99;
+        font: normal 400 15px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        pointer-events: none;
+    }
+
+    #section10 a {
+        padding-top: 60px;
+    }
+
+    #section10 a span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 30px;
+        height: 50px;
+        margin-left: -15px;
+        border: 2px solid #1F9A99;
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+
+    #section10 a span::before {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+        background-color: #1F9A99;
+        border-radius: 100%;
+        -webkit-animation: sdb10 2s infinite;
+        animation: sdb10 2s infinite;
+        box-sizing: border-box;
+    }
+
+    @-webkit-keyframes sdb10 {
+        0% {
+            -webkit-transform: translate(0, 0);
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 1;
+        }
+
+        80% {
+            -webkit-transform: translate(0, 20px);
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes sdb10 {
+        0% {
+            transform: translate(0, 0);
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 1;
+        }
+
+        80% {
+            transform: translate(0, 20px);
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}
